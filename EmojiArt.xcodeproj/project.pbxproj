@@ -60,10 +60,8 @@
 		D21E5A5320B2C4D800DF73F8 /* EmojiArt */ = {
 			isa = PBXGroup;
 			children = (
-				D21E5A5820B2C4D800DF73F8 /* Main.storyboard */,
-				D21E5A7020B30E2B00DF73F8 /* EmojiArtDocumentTableViewController.swift */,
-				D21E5A6920B2C62300DF73F8 /* EmojiArtView.swift */,
-				D21E5A6720B2C5C000DF73F8 /* EmojiArtViewController.swift */,
+				D26C43E720B31653006A804D /* Controllers */,
+				D26C43E820B31665006A804D /* Views */,
 				D21E5A6F20B2E19200DF73F8 /* Extensions */,
 				D21E5A6620B2C51800DF73F8 /* Supporting Files */,
 				D21E5A6020B2C4DA00DF73F8 /* Info.plist */,
@@ -87,6 +85,24 @@
 				D21E5A6D20B2E15300DF73F8 /* Utilities.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D26C43E720B31653006A804D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D21E5A6720B2C5C000DF73F8 /* EmojiArtViewController.swift */,
+				D21E5A7020B30E2B00DF73F8 /* EmojiArtDocumentTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D26C43E820B31665006A804D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D21E5A6920B2C62300DF73F8 /* EmojiArtView.swift */,
+				D21E5A5820B2C4D800DF73F8 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

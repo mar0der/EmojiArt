@@ -10,6 +10,13 @@ import UIKit
 
 class EmojiArtDocumentTableViewController: UITableViewController {
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if splitViewController?.preferredDisplayMode != .primaryOverlay {
+            splitViewController?.preferredDisplayMode = .primaryOverlay
+        }
+    }
+
     //Model
     var emojiArtDocuments = ["One", "Two", "Three"]
     

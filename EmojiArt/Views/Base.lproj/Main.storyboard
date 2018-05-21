@@ -65,17 +65,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiH-Ys-tW7">
                                 <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imm-Bw-4UU" customClass="EmojiArtView" customModule="EmojiArt" customModuleProvider="target">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKS-3w-4gY">
                                         <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="250" constant="703.5" id="WBD-IS-TqF"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="768" id="bix-hI-Is9"/>
+                                        </constraints>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Imm-Bw-4UU" secondAttribute="bottom" id="1ea-S3-gOW"/>
-                                    <constraint firstItem="Imm-Bw-4UU" firstAttribute="top" secondItem="WiH-Ys-tW7" secondAttribute="top" id="bGT-r4-WWj"/>
-                                    <constraint firstItem="Imm-Bw-4UU" firstAttribute="leading" secondItem="WiH-Ys-tW7" secondAttribute="leading" id="bbK-eC-jr2"/>
-                                    <constraint firstAttribute="trailing" secondItem="Imm-Bw-4UU" secondAttribute="trailing" id="raB-d0-TgX"/>
+                                    <constraint firstItem="OKS-3w-4gY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WiH-Ys-tW7" secondAttribute="top" id="B3W-Nz-zqz"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OKS-3w-4gY" secondAttribute="trailing" id="GHO-WB-Lb7"/>
+                                    <constraint firstItem="OKS-3w-4gY" firstAttribute="centerY" secondItem="WiH-Ys-tW7" secondAttribute="centerY" id="IMG-QM-Whg"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OKS-3w-4gY" secondAttribute="bottom" id="jum-Wo-G1Z"/>
+                                    <constraint firstItem="OKS-3w-4gY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WiH-Ys-tW7" secondAttribute="leading" id="khg-xA-1bR"/>
+                                    <constraint firstItem="OKS-3w-4gY" firstAttribute="centerX" secondItem="WiH-Ys-tW7" secondAttribute="centerX" id="tWJ-n0-Nii"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -90,7 +95,9 @@
                     </view>
                     <connections>
                         <outlet property="dropZone" destination="WiH-Ys-tW7" id="uEL-5g-wpz"/>
-                        <outlet property="emojiArtView" destination="Imm-Bw-4UU" id="Y9H-yn-Q49"/>
+                        <outlet property="scrollView" destination="OKS-3w-4gY" id="Xfp-6L-KcH"/>
+                        <outlet property="scrollViewHeight" destination="bix-hI-Is9" id="YG7-BM-vE7"/>
+                        <outlet property="scrollViewWidth" destination="WBD-IS-TqF" id="Vsv-qC-HxS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
